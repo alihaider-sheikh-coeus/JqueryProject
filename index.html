@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="inputDiv">
+
+    <input type="text"  id ="ip_value" required minlength="7" maxlength="15" placeholder="xxx.xxx.xxx.xx" autocomplete="on" autofocus="on"> </input>
+    <br><br> <button class="submitButton" onclick="validateIPaddress()" id="ip_button">Submit</button>
+    <br><p id="ip_status"></p>
+
+</div>
+
+<div>
+    <table id="myTable">
+        <thead>
+        <tr>
+<!--            <th>ip</th>-->
+<!--            <th>country code</th>-->
+<!--            <th>country name</th>-->
+<!--            <th>action</th>-->
+        </tr>
+        </thead>
+        <tbody>
+    </table>
+</div>
+
+
+</body>
+<footer>    <script src="main.js"></script>
+</footer>
+</html>
