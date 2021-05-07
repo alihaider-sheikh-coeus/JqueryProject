@@ -28,6 +28,7 @@ function validateIPaddress()
 function getDetails()
 {
 console.log(ipField.value);
+    ip_status.textContent= "";
     $.get('https://freegeoip.app/json/'+ipField.value, function (data, textStatus, jqXHR) {
         console.log(data);
         var x=JSON.stringify(data)
